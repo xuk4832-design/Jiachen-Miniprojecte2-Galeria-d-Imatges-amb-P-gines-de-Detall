@@ -5,6 +5,11 @@ a:hover {
     transition: all 0.3s ease; /* animación suave */
 }
 
+/*Modificacion de la resolucion*/
+
+video{
+    width: 900px;
+}
 /*Menu*/ 
 
 .barra{ 
