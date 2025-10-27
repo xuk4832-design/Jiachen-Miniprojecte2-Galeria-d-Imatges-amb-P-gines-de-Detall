@@ -1,57 +1,149 @@
-.between { display: flex; justify-content: space-between; } 
+.between { 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: blue;
+    margin-top: 100px;
+    padding: 10px;
+} 
 
-.centrar{ align-items: center; } 
+.between a{
+    background-color: white;
+    border: 10px;
+    border-radius: 10px;
+}
 
+a:hover {
+    transform: scale(1.05); /* pequeño aumento de tamaño */
+    filter: brightness(1.2); /* más brillo */
+    transition: all 0.3s ease; /* animación suave */
+}
 /*Menu*/ 
-.barra{ border: 5px solid blue; width: 1900px; background-color: coral; } 
-.menu{ font-family:'Courier New', Courier, monospace; font-size: 40px; justify-content: space-around; } 
-.menu li{ list-style: none; } .menu a{ text-decoration: none; color: blue; } 
+
+.barra{ 
+    border: 5px solid blue; 
+    width: 99,5%;
+} 
+
+.menu{ 
+    flex-wrap: wrap;
+    font-family:'Courier New', Courier, monospace; font-size: 40px; 
+    justify-content: space-around; 
+} 
+
+.menu li{ 
+    list-style: none; 
+} 
+
+.menu a{ 
+    text-decoration: none; color: blue; 
+} 
 
 /*Aplicante*/ 
-.flex{ display: flex; } 
+.flex{ 
+    display: flex; 
+} 
 
 /*Palabras*/ 
-h1, h2, h3{ font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif; color: blue; } .titulos{ justify-content: center; } 
-h2{ font-family: 'Courier New', Courier, monospace; font-size: 40px; justify-content: center; padding-top: 80px; } 
+h1, h2, h3{ 
+    font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif; color: blue; 
+} 
+
+.titulos{ 
+    justify-content: center; 
+} 
+
+h2{ 
+    font-family: 'Courier New', Courier, monospace; font-size: 40px; 
+    justify-content: center; padding-top: 80px; 
+} 
 
 
-/*Imagenes*/ /*Clases especiales*/ 
-.blue_lock{ justify-content: center; justify-content: row; padding-top: 50px; } 
-.blue_lock img{ margin: 0 auto; justify-content: space-between; }
+/*Imagenes*/ 
+
+/*Centrados generales*/ 
+
+.centrador{ 
+    justify-content: center; 
+    justify-content: row; 
+    padding-top: 50px; 
+
+} 
+
+.centrador img{ 
+    height: 300px; /* o la altura que desees */
+    width: auto;
+    object-fit: contain; /* evita deformaciones */
+    margin: 0 10px; /* opcional: separa las imágenes */
+}
+
+/*Centrado de paginas personales*/
+.centradorP {
+    position: absolute;       /* saca la imagen del flujo */
+    top: 100px;               /* distancia desde arriba */
+    left: 600px;             /* distancia desde la derecha */
+    right: 300px;
+    height: 700px;            /* ajusta el tamaño */      
+    z-index: 10;              /* para que esté encima de otros elementos */
+    padding-top: 200px;
+    padding-left: 700px;
+    width: 600px;
+}
+
+
+body {
+    background-image: url("img/fullsize/background.jpg"); /* ruta de tu imagen */
+    background-size: cover; /* hace que cubra toda la pantalla */
+}
+
+
+.container{
+    padding-top: 100px;
+    border: 1px solid white;
+    width: 700px; /*Ancho de cada bloque*/
+    padding-left: 168px;
+    padding-right: 168px;
+    justify-content: start;
+    background-color: blue;
+    border-radius: 10px;
+}
+
+.container2{
+    padding-top: 100px;
+    border: 1px solid white;
+    width: 700px; /*Ancho de cada bloque*/
+    padding-left: 168px;
+    padding-right: 168px;
+    margin-top: 10px;
+    background-color: blue;
+    border-radius: 10px;
+}
+
+#hello{
+    display: flex;
+}
 
 
 
+main {
+    margin-top: 20px; /* espacio entre header y main */
+}
+
+.end{
+    justify-content: end;
+    
+}
+ 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.centrador video {
+    max-width: 100%;  /* evita que se salga del contenedor */
+    height: auto;     /* mantiene la proporción */
+    border: 2px solid blue; /* opcional: borde para que se note la barra */
+    margin-bottom: 100px;
+    
+}
 
 
 
