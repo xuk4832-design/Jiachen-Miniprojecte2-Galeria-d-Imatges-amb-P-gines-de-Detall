@@ -1,24 +1,10 @@
-.between { 
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    background-color: blue;
-    margin-top: 100px;
-    padding: 10px;
-} 
-
-.between a{
-    background-color: white;
-    border: 10px;
-    border-radius: 10px;
-}
-
+/*Enlaces interactivos*/
 a:hover {
     transform: scale(1.05); /* pequeño aumento de tamaño */
     filter: brightness(1.2); /* más brillo */
     transition: all 0.3s ease; /* animación suave */
 }
+
 /*Menu*/ 
 
 .barra{ 
@@ -45,96 +31,72 @@ a:hover {
     display: flex; 
 } 
 
-/*Palabras*/ 
+/*Atributos de palabras*/ 
+
 h1, h2, h3{ 
-    font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif; color: blue; 
+    font-size: 60px; font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif; color: blue; 
 } 
 
 .titulos{ 
-    justify-content: center; 
+    justify-content: center;
+    font-size: 80px; 
 } 
 
+.btitulos h1{ 
+    justify-content: center;
+    font-size: 80px; 
+    color: yellow;
+    font-size: 90px;
+    padding-bottom: 90px;
+} 
 h2{ 
     font-family: 'Courier New', Courier, monospace; font-size: 40px; 
     justify-content: center; padding-top: 80px; 
 } 
 
-
-/*Imagenes*/ 
+p{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
 
 /*Centrados generales*/ 
 
 .centrador{ 
     justify-content: center; 
-    justify-content: row; 
     padding-top: 50px; 
+    gap: 80px;
 
 } 
 
-.centrador img{ 
-    height: 300px; /* o la altura que desees */
-    width: auto;
-    object-fit: contain; /* evita deformaciones */
-    margin: 0 10px; /* opcional: separa las imágenes */
+.centrador_dentro_barra img{ 
+    height: 300px; /*o la altura que desees*/
+    width: 300px;
+    object-fit: contain; /*evita deformaciones*/
+    margin: 0 10px; /*separa las imágenes*/
 }
 
-/*Centrado de paginas personales*/
-.centradorP {
-    position: absolute;       /* saca la imagen del flujo */
-    top: 100px;               /* distancia desde arriba */
-    left: 600px;             /* distancia desde la derecha */
-    right: 300px;
-    height: 700px;            /* ajusta el tamaño */      
-    z-index: 10;              /* para que esté encima de otros elementos */
-    padding-top: 200px;
-    padding-left: 700px;
-    width: 600px;
-}
-
+/*Fondo*/
 
 body {
-    background-image: url("img/fullsize/background.jpg"); /* ruta de tu imagen */
+    background-image: url("img/fullsize/background.jpg"); /* ruta de mi imagen */
     background-size: cover; /* hace que cubra toda la pantalla */
 }
 
-
-.container{
-    padding-top: 100px;
-    border: 1px solid white;
-    width: 700px; /*Ancho de cada bloque*/
-    padding-left: 168px;
-    padding-right: 168px;
-    justify-content: start;
-    background-color: blue;
-    border-radius: 10px;
-}
-
-.container2{
-    padding-top: 100px;
-    border: 1px solid white;
-    width: 700px; /*Ancho de cada bloque*/
-    padding-left: 168px;
-    padding-right: 168px;
-    margin-top: 10px;
-    background-color: blue;
-    border-radius: 10px;
-}
-
-#hello{
-    display: flex;
-}
-
-
+/*Barras_Separadas*/
 
 main {
     margin-top: 20px; /* espacio entre header y main */
 }
+
+/*Posicionamiento*/
 
 .end{
     justify-content: end;
     
 }
  
+/*Posicionamiento a contenidos singulares*/
 
 
 .centrador video {
@@ -146,22 +108,53 @@ main {
 }
 
 
+.container2{
+    padding-top: 100px;
+    border: 1px solid white;
+    width: 700px; /*Ancho de cada bloque*/
+    padding-left: 168px;
+    padding-right: 168px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
 
+.container{
+    padding-top: 100px;
+    border: 1px solid white;
+    width: 900px; /*Ancho de cada bloque*/
+    padding-left: 168px;
+    padding-right: 168px;
+    justify-content: start;
+    border-radius: 10px;
+}
 
+.centradorP {
+    position: absolute;       /* saca la imagen del flujo */
+    left: 900px;             /* distancia desde la derecha */
+    right: 300px;
+    height: 800px;            /* ajusta el tamaño */      
+    z-index: 10;              /* para que esté encima de otros elementos */
+    padding-top: 200px;
+    padding-left: 700px;
+    width: 1000px;
+}
 
+/*Botones*/
 
+.between { 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: blue;
+    margin-top: 200px;
+    padding: 10px;
+} 
 
-
-
-
-
-
-
-
-
-
-
-
-
+.between a{
+    background-color: white;
+    border: 10px;
+    border-radius: 10px;
+}
 
 
