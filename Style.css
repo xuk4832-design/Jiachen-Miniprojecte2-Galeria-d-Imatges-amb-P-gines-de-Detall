@@ -1,4 +1,5 @@
 /*Enlaces interactivos*/
+
 a:hover {
     transform: scale(1.05); /* pequeño aumento de tamaño */
     filter: brightness(1.2); /* más brillo */
@@ -68,11 +69,15 @@ p{
 /*Centrados generales*/ 
 
 .centrador{ 
-    justify-content: center; 
+    width: auto;
     padding-top: 50px; 
     gap: 80px;
-
+    flex-wrap: wrap;
 } 
+
+.centrar{
+    justify-content: center; 
+}
 
 .centrador_dentro_barra img{ 
     height: 300px; /*o la altura que desees*/
@@ -98,11 +103,9 @@ main {
 
 .end{
     justify-content: end;
-    
 }
  
 /*Posicionamiento a contenidos singulares*/
-
 
 .centrador video {
     max-width: 100%;  /* evita que se salga del contenedor */
