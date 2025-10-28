@@ -181,9 +181,11 @@ main {
 .barraa {
   flex: 1; /* cada barra ocupa el mismo espacio */
   border-radius: 8px;
+  margin: 20px;
 }
 
 /* Colores distintos para distinguirlas */
+
 .barra1 {
   background-color: #ff4d4d;
 }
