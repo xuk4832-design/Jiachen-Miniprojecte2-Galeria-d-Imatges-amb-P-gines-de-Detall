@@ -166,3 +166,39 @@ main {
 }
 
 
+/*Contenedores experimentales*/
+
+.contenedor {
+  display: flex;
+  justify-content: center; /* separa las barras */
+  gap: 20px; /* espacio entre barras */
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.barraa {
+  flex: 1; /* cada barra ocupa el mismo espacio */
+  border-radius: 8px;
+}
+
+/* Colores distintos para distinguirlas */
+.barra1 {
+  background-color: #ff4d4d;
+}
+.barra2 {
+  background-color: #4da6ff;
+}
+.barra3 {
+  background-color: #4dff88;
+}
+
+/* palabras */
+
+h1{
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+} 
+
